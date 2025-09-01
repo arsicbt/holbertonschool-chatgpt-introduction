@@ -6,10 +6,13 @@ def factorial(n):
     return 1 if n == 0 else n * factorial(n-1)
 
 def main()
-    
+    """Main function to handle input and compute factorial."""
     if len(sys.argv) < 2 or not sys.argv[1].isdigit():
         print("Please give a valid integer.")
         sys.exit(1)
 
-f = factorial(int(sys.argv[1]))
-print(f)
+    f = factorial(int(sys.argv[1]))
+    print(f)
+
+if __name__ == "__main__":
+    main()
